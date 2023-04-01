@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            body{
+                background-color: #E2FFDB;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Medical_blogs.html">Medical blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="consultations.html">Consulataions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="nav-link icons-profile">
+                                    <div class="icon-profile profile">
+                                        <button onclick="toggleProfile()">
+                                            <img src="image/vectors/user.png"/>
+                                        </button> 
+                                        <div id="listProfile" class="listProfile">
+                                            <ul>
+                                                <li class="item_p">
+                                                    <a href="pagDr.html">
+                                                        <i class="bi bi-person"></i>
+                                                        <span>username</span>
+                                                    </a>
+                                                </li>
+                                                <hr>
+                                                <li class="item_p">
+                                                    <a href="Setting.html">
+                                                        <i class="bi bi-sliders"></i>
+                                                        <span>Setting</span>
+                                                    </a>
+                                                </li>
+                                                <li class="item_p">
+                                                    <a href="#">
+                                                        <i class="bi bi-life-preserver"></i>
+                                                        <span>Help</span>
+                                                    </a>
+                                                </li>
+                                                <hr>
+                                                <li class="item_p">
+                                                    <a href="index.html">
+                                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                        <span>LogOut</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <button onclick="toggleNotifi()" class="icon-profile notification">
+                                        <img src="image/iconsheader/notifications_none-24px.png"/>
+                                        <span id="badge" class="badge">11</span>
+                                    </button>
+
+                                    <div id="listNotification" class="listNotification-content">
+                                        <h6>Notices</h6>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+        <div class="page container">
+            <div class="row justify-content-center">
+                <div class="col-lg col-md-12">
+                    <div class="header-profile shadow p-3 mb-5 bg-white rounded">
+
+                        <div class="container">
+                            <div class="profile-photo col-lg">
+                                <img src="image/vectors/user.png" alt=""/>
+                            </div>
+                            <div class="profile-data col-lg">
+                                <div class="name-user">
+                                    <h1>Dr.Hussam hejazy<span>ــــ Clinic ahgba</span></h1>
+                                </div>
+
+                                <div class="times">
+                                    <h5>Clinic ahgba<span>Clinic ahgba</span></h5>
+                                    <h5>Clinic ahgba<span>Clinic ahgba</span></h5>
+                                    <h5>Clinic ahgba<span>Clinic ahgba</span></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="timeline shadow p-3 mb-5 bg-white rounded">
+                        <div class="container text-center">
+                            <div class="row page-user">
+                                <div class="col-lg-12">
+                                    <button type="button" class="col-lg-6 page-user-consultation-btn" onclick="location.replace('Dr.html')">Consultation</button>
+                                </div>
+
+                                <div id="map-container-google-1" class=" map-container col-lg-12">
+                                    <iframe src="https://maps.google.com/maps?q=gaza&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-data-profile col-lg col-md-12 shadow p-3 mb-5 bg-white rounded">
+
+                    <!--section Contact info-->
+                    <section class="contact-info text-center">
+                        <div class="container">
+                            <div class="card-body">
+                                <h5 class="Address card-title">Address</h5>
+                                <p class="card-text">3 Street, Country,State</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="Contact card-title">Contact</h5>
+                                <p class="card-text">vet_clinic@gmail.com</p>
+                                <p class="card-text">+970 000000000 </p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="Social card-title">Social</h5>
+                                <div class="bordar-social-icon">
+                                    <a href="#"><img src="image/icons/facebook.png"></a>
+                                </div>
+                                <div class="bordar-social-icon">
+                                    <a href="#"><img src="image/icons/instagram.png"></a>
+                                </div>
+                                <div class="bordar-social-icon">
+                                    <a href="#"><img src="image/icons/twiter.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--End section Contact info-->
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <script>
+            var listNotification = document.getElementById('listNotification');
+            var badge = parseInt(document.getElementById('badge').innerText);
+            var listNotification_isDown = false;
+
+
+            var listProfile = document.getElementById('listProfile');
+            var listProfile_isDown = false;
+
+            function toggleNotifi(){
+                if (listNotification_isDown){
+                    listNotification.style.display = 'none';
+                    listNotification_isDown = false;
+                }else{
+                    if (listProfile_isDown){
+                        listProfile.style.display = 'none';
+                        listProfile_isDown = false;
+                    }
+                    listNotification.style.display = 'block';
+                    listNotification_isDown = true;
+                    document.getElementById('badge').innerText = '0';
+                    document.getElementById('badge').style.display = 'none';
+
+                }
+            }
+            if (badge > 0){
+                document.getElementById('badge').style.display = 'block';
+            }
+
+            if (badge >= 10){
+                document.getElementById('badge').innerText = '9+';
+            }
+
+
+            function toggleProfile(){
+                if (listProfile_isDown){
+                    listProfile.style.display = 'none';
+                    listProfile_isDown = false;
+                }else{
+                    if (listNotification_isDown){
+                        listNotification.style.display = 'none';
+                        listNotification_isDown = false;
+                    }
+                    listProfile.style.display = 'block';
+                    listProfile_isDown = true;
+                }
+            }
+
+
+        </script>
+        <script>
+            var listNotification = document.getElementById('listNotification');
+            var listProfile = document.getElementById('listProfile');
+            var listNotification_isDown = false;
+            var listProfile_isDown = false;
+
+            function toggleNotifi(){
+                if (listNotification_isDown){
+                    listNotification.style.display = 'none';
+                    listNotification_isDown = false;
+                }else{
+                    if (listProfile_isDown){
+                        listProfile.style.display = 'none';
+                        listProfile_isDown = false;
+                    }
+                    listNotification.style.display = 'block';
+                    listNotification_isDown = true;
+                }
+            }
+
+            function toggleProfile(){
+                if (listProfile_isDown){
+                    listProfile.style.display = 'none';
+                    listProfile_isDown = false;
+                }else{
+                    if (listNotification_isDown){
+                        listNotification.style.display = 'none';
+                        listNotification_isDown = false;
+                    }
+                    listProfile.style.display = 'block';
+                    listProfile_isDown = true;
+                }
+            }
+
+
+        </script>
+        <script>
+            function OpenFormSignUp(numberForm){
+                switch(numberForm) {
+                    case 0:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Requests_Pending').style.display='block';
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        document.getElementById('Reservation').style.display='none';
+                        break;
+                    case 1:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Consultation_Requests').style.display='block';
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('Reservation').style.display='none';
+                        break;
+                    case 2:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Reservation').style.display='block';
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        break;
+                }
+            }
+
+            function CloseFormSignUp(numberForm){
+                switch(numberForm) {
+                    case 0:
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                    case 1:
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                    case 2:
+                        document.getElementById('Reservation').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                }
+            }
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

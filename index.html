@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Medical_blogs.html">Medical blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="LOGIN.html">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link button-signin rounded-pill" href="#register-cards">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+
+        <section id="slideshow" class="slideshow container-lg my-3">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                    <li data-target="#slideshow" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/ImageSlider/doctor-looking-pet-closely%20(2).jpg" width="100%" alt="First Slide">
+                        <div class="carousel-caption">
+                            <h1>veterinary clinic</h1>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/ImageSlider/doctor-testing-animal-with-stethoscope.jpg"  width="100%"alt="Second Slide">
+                        <div class="carousel-caption">
+                            <h1>veterinary clinic</h1>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/ImageSlider/vet-is-checking-cat-s-teeth.jpg" width="100%" alt="Third Slide">
+                        <div class="carousel-caption">
+                            <h1>veterinary clinic</h1>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+        <!-- Start section (signup) -->
+        <section class="signup">
+            <div class="head-section shadow-sm p-1 mb-5 rounded text-center">
+                <span>veterinary clinic</span>
+            </div>
+            <div class="text-intro container text-center hidden-xs">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <p>We are glad you were among us, we hope you enjoy and benefit<br><br>We await your participation and interaction, and welcome to Vet Clinic</p>
+                    </div>
+                </div>
+                <div class="vector-intro container text-center">
+                    <span>Sign up</span>
+                    <img src="image/vectors/4354179.png" alt="vector"/>
+                </div>
+            </div>
+            <div id="register-cards" class="register-cards container text-center">
+                <div class="row">
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="register-card card">
+                            <img src="image/vectors/farmer.png" alt="vector-farmer">
+                            <div class="card-body">
+                                <h5 class="card-title">Register as a farmer</h5>
+                                <button id="signin-farmer" type="button" onclick="OpenFormSignUp(0);" class="rounded-pill" style="font-family: 'Roboto';">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="register-card card">
+                            <img src="image/vectors/doctor.png" alt="vector-doctor">
+                            <div class="card-body">
+                                <h5 class="card-title">Register as a doctor</h5>
+                                <button id="signin-doctor" type="button" onclick="OpenFormSignUp(1);" class="rounded-pill" style="font-family: 'Roboto';">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-4">
+                        <div class="register-card card">
+                            <img src="image/vectors/user.png" alt="vector-user">
+                            <div class="card-body">
+                                <h5 class="card-title">Register as a user</h5>
+                                <button id="signin-user" type="button" onclick="OpenFormSignUp(2);" class="rounded-pill" style="font-family: 'Roboto';">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr style="width: 50%; margin-left: 25%;">
+        </section>
+        <!-- End section (signup) -->
+
+
+        <!-- Start footer -->
+        <footer>
+            <!--Google map-->
+            <div class="container">
+                <div id="map-container-google-1" class="z-depth-1-half map-container">
+                    <iframe src="https://maps.google.com/maps?q=gaza&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+            </div>
+            <!--End Google Maps-->
+
+
+            <!--section Contact info-->
+            <section class="contact-info text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-body col-lg-3 col-xs-12">
+                            <h5 class="Address card-title" >Address</h5>
+                            <p class="card-text" >3 Street, Country,State</p>
+                        </div>
+                        <div class="card-body col-lg-3 col-xs-12">
+                            <h5 class="Contact card-title">Contact</h5>
+                            <p class="card-text" >vet_clinic@gmail.com</p>
+                            <p class="card-text" >+970 000000000 </p>
+                        </div>
+                        <div class="card-body col-lg-3 col-xs-12">
+                            <h5 class="Social card-title">Social</h5>
+                            <div class="bordar-social-icon">
+                                <a href="#"><img src="image/icons/facebook.png"></a>
+                            </div>
+                            <div class="bordar-social-icon">
+                                <a href="#"><img src="image/icons/instagram.png"></a>
+                            </div>
+                            <div class="bordar-social-icon">
+                                <a href="#"><img src="image/icons/twiter.png"></a>
+                            </div>
+                        </div>
+                        <div class="card-body col-lg-3 col-xs-12">
+                            <div class="farmarpoint keymap">
+                                <p >Farmar</p>
+                                <img src="image/vectors/Rectangle%20465.png">
+                            </div>
+                            <br>
+                            <div class="vetclinic keymap">
+                                <p>Veterinary Clinic</p>
+                                <img src="image/vectors/Rectangle%20466.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End section Contact info-->
+        </footer>
+        <!-- End footer -->
+
+
+
+
+
+
+
+
+        <!-- start signup farmar form -->
+        <div id="sign_farmar" class="my-modal form-signup-user">
+            <form class="my-modal-content animate" action="">
+                <span onclick="CloseFormSignUp()" class="close" title="Close Modal">&times;</span>
+                <h1>Sign up</h1>
+                <div class="header-model">
+                    <img src="image/vectors/farmer.png" alt="avatar"/>
+                    <p>Register as Farmar</p> 
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="name"><b>Name*</b></label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="email"><b>Email*</b></label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="phone" ><b>Phone*</b></label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="password" ><b>Password*</b></label>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-12">
+                            <label for="owned"><b>Which animals do you own?</b></label>
+                            <div class="animals-ownedrow">
+                                <div class="row">
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Sheep 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Deer 
+                                            <input type="checkbox" id="animal2" name="animal2" value="Deer">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Cow 
+                                            <input type="checkbox" id="animal3" name="animal3" value="Cow">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Cats 
+                                            <input type="checkbox" id="animal4" name="animal4" value="Cats">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Chickens 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Other 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signupbtn">
+                            <button type="submit">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="avatar-bottom text-center">
+                    <img src="image/vectors/Group%20993.png" alt="avatar">
+                </div>
+            </form>
+        </div>
+        <!-- start signup farmar form -->
+
+
+
+
+
+
+
+
+        <!-- start signup doctor form -->
+        <div id="sign_doctor" class="my-modal form-signup-user">
+            <form class="my-modal-content animate" action="">
+                <span onclick="CloseFormSignUp()" class="close" title="Close Modal">&times;</span>
+                <h1>Sign up</h1>
+                <div class="header-model">
+                    <img src="image/vectors/doctor.png" alt="avatar"/>
+                    <p>Register as Doctor</p> 
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="name"><b>Name*</b></label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="email"><b>Email*</b></label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="phone" ><b>Phone*</b></label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="contry"><b>Contry*</b></label>
+                            <input type="text"  name="contry" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="zip" ><b>ZIP*</b></label>
+                            <input type="number" name="zip" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="loction"><b>Loction*</b></label>
+                            <input type="text"  name="loction" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="clinic_name" ><b>Clinic name*</b></label>
+                            <input type="text" name="clinic_name" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="password" ><b>Password*</b></label>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <label for="certificates" ><b>Certificates*</b></label>
+                            <input id="file0" type="file" name="certificates"   accept=".pdf" onchange="return fileValidation(0)" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <label for="cv" ><b>Writing Cv * </b></label>
+                            <input id="file1" type="file" name="certificates"   accept=".pdf" onchange="return fileValidation(1)" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="last_scientific"><b>The last scientific outcome*</b></label>
+                            <input type="text" name="last_scientific" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="experience"><b>Years of Experience</b></label>
+                            <input type="text" name="experience" required>
+                        </div>
+                        <div class="signupDoctorbtn">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avatar-bottom text-center">
+                    <img src="image/vectors/Group%20387.png" alt="avatar" style="width: 95%;"> 
+                </div>
+            </form>
+        </div>
+        <!-- start signup doctor form -->
+
+
+
+
+
+
+
+
+        <!-- start signup user form -->
+        <div id="sign_user" class="my-modal form-signup-user">
+            <form class="my-modal-content animate" action="">
+                <span onclick="CloseFormSignUp()" class="close" title="Close Modal">&times;</span>
+                <h1>Sign up</h1>
+                <div class="header-model">
+                    <img src="image/vectors/user.png" alt="avatar"/>
+                    <p>Register as User</p> 
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="name"><b>Name*</b></label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="email"><b>Email*</b></label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="phone" ><b>Phone*</b></label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="password" ><b>Password*</b></label>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-12">
+                            <label for="owned"><b>Which animals do you own?</b></label>
+                            <div class="animals-ownedrow">
+                                <div class="row">
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Sheep 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Deer 
+                                            <input type="checkbox" id="animal2" name="animal2" value="Deer">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Cow 
+                                            <input type="checkbox" id="animal3" name="animal3" value="Cow">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Cats 
+                                            <input type="checkbox" id="animal4" name="animal4" value="Cats">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Chickens 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+                                    <div class="item col-lg-2 col-md-2 col-sm-4">
+                                        <label class="container">Other 
+                                            <input type="checkbox" id="animal6" name="animal6" value="Other">
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signupbtn">
+                            <button type="submit">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="avatar-bottom text-center">
+                    <img src="image/vectors/Group%201033.png" alt="avatar">
+                </div>
+            </form>
+        </div>
+        <!-- start signup user form -->
+
+
+
+        <script>
+            // Get the modal
+            var modal0 = document.getElementById('sign_farmar');
+            var modal1 = document.getElementById('sign_doctor');
+            var modal2 = document.getElementById('sign_user');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal0 || event.target == modal1 || event.target == modal2) {
+                    event.target.style.display = "none";
+                    var image = document.getElementById("navbar");
+                    location.reload();
+                }
+            }
+
+            function OpenFormSignUp(numberForm){
+                switch(numberForm) {
+                    case 0:
+                        document.getElementById('sign_farmar').style.display='block';
+                        break;
+                    case 1:
+                        document.getElementById('sign_doctor').style.display='block';
+                        break;
+                    case 2:
+                        document.getElementById('sign_user').style.display='block';
+                        break;
+                }
+                var image = document.getElementById("navbar");
+                image.removeAttribute("class");
+            }
+
+            function CloseFormSignUp(){
+                document.getElementById('sign_user').style.display='none';
+                location.reload();
+            }
+
+
+            /////// validFileType ///////
+            function fileValidation(id) { 
+                if(id == 0){
+                    var fileInput = document.getElementById('file0'); 
+                }else if(id == 1){
+                    var fileInput = document.getElementById('file1');
+                }
+
+
+                var filePath = fileInput.value; 
+
+                // Allowing file type 
+                var allowedExtensions =  /(\.pdf)$/i; 
+
+                if (!allowedExtensions.exec(filePath)) { 
+                    alert('Invalid file type'); 
+                    fileInput.value = ''; 
+                    return false; 
+                }else{
+                    fileInput.style.color='#55B792';
+                }   
+            } 
+
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

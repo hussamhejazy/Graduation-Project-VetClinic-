@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Medical_blogs.html">Medical blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="LOGIN.html">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link button-signin rounded-pill" href="index.html">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+
+        <!--Start section (login-section) -->
+        <section class="login-section container">
+            <div class="row justify-content-center">
+                <div class="img-vector hidden-xs">
+                    <img src="image/vectors/Group%20226.png" alt="vector%20226"/>
+                </div> 
+                <div class="login-form">
+                    <form action="#">
+                        <h1>Login Account</h1>
+                        <p class="hidden-xs">"Sed ut perspiciatis unde omnis iste natus error sit voluptatemdoloremque
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatemdoloremque
+                            laudab illo inventore veritatis </p>
+                        <input class="edit-text" type="text" placeholder="Email" aria-label="Email" autofocus="1" name="Email" required>
+                        <input id="password" class="edit-text" type="password" placeholder="Password" aria-label="Password" name="Password" required>
+                        <p id="massega" style="display: none; color: red;">Caps lock is ON.</p>
+                        <div class="form-check">
+                            <label class="form-check-label">Check me out</label>
+                            <input type="checkbox" class="form-check-input"  name="Stayonline">
+                        </div>
+                        <a class="lable" href="#">Need help?</a>
+                        <button class="button-con rounded-pill" type="submit">Continue</button>
+                    </form>
+                    <div class="craete-account">
+                        <button type="button" onclick="window.open('index.html');" >Create an acount </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End section (login-section) -->
+
+
+        <!-- Start footer -->
+        <footer class="footer-AboutUs-section hidden-xs">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!--Google map-->
+                    <div class="col-lg-12 col-xs-12">
+                        <div id="map-container-google-1" class="z-depth-1-half map-container">
+                            <iframe src="https://maps.google.com/maps?q=gaza&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+                        </div>
+                    </div>
+
+                    <!--End Google Maps-->
+
+                    <!--section Contact info-->
+                    <section class="contact-info text-center col-lg-12 col-xs-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="card-body col-lg-3">
+                                    <h5 class="Address card-title">Address</h5>
+                                    <p class="card-text">3 Street, Country,State</p>
+                                </div>
+                                <div class="card-body col-lg-3">
+                                    <h5 class="Contact card-title">Contact</h5>
+                                    <p class="card-text">vet_clinic@gmail.com</p>
+                                    <p class="card-text">+970 000000000 </p>
+                                </div>
+                                <div class="card-body col-lg-3">
+                                    <h5 class="Social card-title">Social</h5>
+                                    <div class="bordar-social-icon">
+                                        <a href="#"><img src="image/icons/facebook.png"></a>
+                                    </div>
+                                    <div class="bordar-social-icon">
+                                        <a href="#"><img src="image/icons/instagram.png"></a>
+                                    </div>
+                                    <div class="bordar-social-icon">
+                                        <a href="#"><img src="image/icons/twiter.png"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body col-lg-3">
+                                    <div class="farmarpoint keymap">
+                                        <p>Farmar</p>
+                                        <img src="image/vectors/Rectangle%20465.png">
+                                    </div>
+                                    <br>
+                                    <div class="vetclinic keymap">
+                                        <p>Veterinary Clinic</p>
+                                        <img src="image/vectors/Rectangle%20466.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--End section Contact info-->
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+        <script>
+            var input = document.getElementById("password");
+            var text = document.getElementById("massega");
+            input.addEventListener("keyup", function(event) {
+
+                if (event.getModifierState("CapsLock")) {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none"
+                }
+            });
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

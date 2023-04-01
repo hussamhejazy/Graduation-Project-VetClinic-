@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            body{
+                background-color: #E2FFDB;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <div class="nav-link icons-profile">
+                                    <div class="icon-profile profile">
+                                        <button onclick="toggleProfile()">
+                                            <img src="file-20191203-66986-im7o5.jpg"/>
+                                    </button> 
+                                    </div>
+                                    
+                                    <div id="listProfile" class="listProfile">
+                                        <ul>
+                                            <li class="item_p">
+                                                <a href="pagDr.html">
+                                                    <i class="bi bi-person"></i>
+                                                    <span>username</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="#">
+                                                    <i class="bi bi-sliders"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+                                            <li class="item_p">
+                                                <a href="#">
+                                                    <i class="bi bi-life-preserver"></i>
+                                                    <span>Help</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="index.html">
+                                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                    <span>LogOut</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button onclick="toggleNotifi()" class="icon-profile notification">
+                                        <img src="image/iconsheader/notifications_none-24px.png"/>
+                                        <span class="badge">0</span>
+                                    </button>
+
+                                    <div id="listNotification" class="listNotification-content">
+                                        <h6>Notices</h6>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+        
+        <section class="section-setting">
+            <form  action="">
+                <div class="container rounded bg-white mt-5">
+                <div class="row">
+                    <div class="col-md-4 border-right">
+                        <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                            <div class="rounded-circle imageProfile mt-5">
+                            <img class="rounded-circle" src="">
+                            </div>
+                            <span class="font-weight-bold">@username</span><span class="text-black-50">hussam@gmail.com</span>
+                            <span>Palestine</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3 py-5">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex flex-row align-items-center back">
+                                    <i class="fa fa-long-arrow-left mr-1 mb-1"></i>
+                                    <a href="pagDr.html" class="back-home">Back to home</a>
+                                </div>
+                                <h6 class="text-right">Account settings</h6>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Name" value="hussam"></div>
+                                <div class="col-md-6"><input type="text" class="form-control"  placeholder="Email" value="hussam@gmail.com"></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Phone number" value="0593333333"></div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Country" value="Palestine"></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Addres" value="gaza-rafah"></div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="ZIP" value="00"></div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Clinic name" value="clinic"></div>
+                            </div>
+                            <div id="change-password" class="change-password">
+                                <hr>
+                                <div class="row mt-3">
+                                <div class="col-md-12" style="margin-bottom: 15px">
+                                    <input type="password" class="form-control" placeholder="Current Password"></div>
+                                    <div class="col-md-12" style="margin-bottom: 15px">
+                                    <input type="password" class="form-control" placeholder="New Password"></div>
+                                    <div class="col-md-12" style="margin-bottom: 15px">
+                                    <input type="password" class="form-control" placeholder="Confirm Password"></div>
+                            </div>
+                            </div>
+                            <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                                <a href="#" class="text-right change-pass-btn" onclick="openPasswordCh()">Change Password</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </form>   
+        </section>
+        <script>
+        function openPasswordCh(){
+            var c = document.getElementById('change-password');
+            if  (c.style.display == 'block'){
+                c.style.display = 'none';
+            }else{
+                c.style.display = 'block';
+            }
+        }
+        </script>
+        <script>
+            var listNotification = document.getElementById('listNotification');
+            var listProfile = document.getElementById('listProfile');
+            var listNotification_isDown = false;
+            var listProfile_isDown = false;
+            
+            function toggleNotifi(){
+                if (listNotification_isDown){
+                    listNotification.style.display = 'none';
+                    listNotification_isDown = false;
+                }else{
+                    if (listProfile_isDown){
+                        listProfile.style.display = 'none';
+                        listProfile_isDown = false;
+                        }
+                    listNotification.style.display = 'block';
+                    listNotification_isDown = true;
+                }
+            }
+            
+            function toggleProfile(){
+                if (listProfile_isDown){
+                    listProfile.style.display = 'none';
+                    listProfile_isDown = false;
+                }else{
+                    if (listNotification_isDown){
+                        listNotification.style.display = 'none';
+                        listNotification_isDown = false;
+                        }
+                    listProfile.style.display = 'block';
+                    listProfile_isDown = true;
+                }
+            }
+
+
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

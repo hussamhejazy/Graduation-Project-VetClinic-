@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            body{
+                background-color: #E2FFDB;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Medical_blogs.html">Medical blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="consultations.html">Consulataions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="nav-link icons-profile">
+                                    <div class="icon-profile profile">
+                                        <button onclick="toggleProfile()">
+                                            <img src="file-20191203-66986-im7o5.jpg"/>
+                                        </button> 
+                                    </div>
+
+                                    <div id="listProfile" class="listProfile">
+                                        <ul>
+                                            <li class="item_p">
+                                                <a href="pagDr.html">
+                                                    <i class="bi bi-person"></i>
+                                                    <span>username</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="Setting.html">
+                                                    <i class="bi bi-sliders"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+                                            <li class="item_p">
+                                                <a href="#">
+                                                    <i class="bi bi-life-preserver"></i>
+                                                    <span>Help</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="index.html">
+                                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                    <span>LogOut</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button onclick="toggleNotifi()" class="icon-profile notification">
+                                        <img src="image/iconsheader/notifications_none-24px.png"/>
+                                        <span class="badge">0</span>
+                                    </button>
+
+                                    <div id="listNotification" class="listNotification-content">
+                                        <h6>Notices</h6>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+        <section class="section-page-dr">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-4">
+                        <div class="image-card">
+                            <img src="image/vectors/doctor.png" alt="Doctor">
+                        </div>
+                        <h1>Hussam Hejazy</h1>
+                        <p class="title">Front end developer</p>
+                        <p>University of Palestin</p>
+                        <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-twitter"></i></a>  
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="btns0">
+                            <button class="Consultbtn0" onclick="OpenForm_Dialog()">Consult</button>
+                            <button class="Bookbtn0" onclick="location.replace('pagDr.html')">Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start Consult form -->
+        <div id="Consult_Dialog" class="my-modal">
+            <form class="my-modal-content animate Dialog" action="">
+                <span onclick="CloseForm_Dialog()" class="close" title="Close Modal">&times;</span>
+                <div class="container text-center">
+                    <h1 class="Title-Dialog">Consult</h1>
+                    <div class="row">
+                        <div class="row mt-2">
+                            <div class="col-md-6 col-sm-6 ">
+                                <label for="Question"><b>Ask a Question</b></label>
+                                <br>
+                                <input type="text" name="Question" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="classification"><b>Question classification</b></label>
+                                <br>
+                                <select name="classification" id="classification">
+                                    <option value="Select">Select:</option>
+                                    <option value="Internal">Internal diseases</option>
+                                    <option value="skin">skin diseases</option>
+                                    <option value="nutrition">nutrition</option>
+                                    <option value="Respiratory">Respiratory</option>
+                                    <option value="mating">Pregnancy and mating</option>
+                                    <option value="attention">Care and attention</option>
+                                    <option value="strikes">Fractions and strikes</option>
+                                    <option value="Eye">Eye problems</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="Type"><b>Animal type</b></label>
+                                <br>
+                                <input type="text" name="Type" >
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="gender"><b>Animal Gender</b></label>
+                                <br>
+                                <input type="text" name="gender" required>
+                            </div>
+
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="meals"><b>The type of meals</b></label>
+                                <br>
+                                <input type="text" name="meals" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="Nmeals"><b>The number of meals</b></label>
+                                <br>
+                                <input type="text" name="Nmeals" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="Symptoms"><b>Symptoms observed</b></label>
+                                <br>
+                                <input type="text" name="Symptoms" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="long_symptoms"><b>How long have these symptoms been observed ?</b></label>
+                                <br>
+                                <input type="text" name="long_symptoms" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12 col-sm-12">
+                                <label for="vaccinated"><b>Have you ever been vaccinated?</b></label>
+                                <input type="checkbox" name="vaccinated" required>
+                            </div>  
+                        </div>
+                        <div class="row mt-5 col-md-12 col-sm-12">
+                            <label for="notes"><b>Any other notes :</b></label>
+                            <textarea id="notes" name="notes" rows="5" ></textarea>
+                        </div>
+                        <div class="file row mt-3 col-md-12 col-sm-12">
+                            <div id="fileConsultation" class="InputFile col-md-9">
+                                <input type="file" name="fileConsult">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-right"><button class="" type="submit">submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end Consult form -->
+
+
+
+        <script>
+            var modal = document.getElementById('Consult_Dialog');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    event.target.style.display = "none";
+                }
+            }
+            function OpenForm_Dialog(){
+                document.getElementById('Consult_Dialog').style.display='block';
+            }
+
+            function CloseForm_Dialog(){
+                document.getElementById('Consult_Dialog').style.display='none';
+            }
+        </script>
+        <script>
+            var listNotification = document.getElementById('listNotification');
+            var listProfile = document.getElementById('listProfile');
+            var listNotification_isDown = false;
+            var listProfile_isDown = false;
+
+            function toggleNotifi(){
+                if (listNotification_isDown){
+                    listNotification.style.display = 'none';
+                    listNotification_isDown = false;
+                }else{
+                    if (listProfile_isDown){
+                        listProfile.style.display = 'none';
+                        listProfile_isDown = false;
+                    }
+                    listNotification.style.display = 'block';
+                    listNotification_isDown = true;
+                }
+            }
+
+            function toggleProfile(){
+                if (listProfile_isDown){
+                    listProfile.style.display = 'none';
+                    listProfile_isDown = false;
+                }else{
+                    if (listNotification_isDown){
+                        listNotification.style.display = 'none';
+                        listNotification_isDown = false;
+                    }
+                    listProfile.style.display = 'block';
+                    listProfile_isDown = true;
+                }
+            }
+
+
+        </script>
+        <script>
+            function OpenFormSignUp(numberForm){
+                switch(numberForm) {
+                    case 0:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Requests_Pending').style.display='block';
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        document.getElementById('Reservation').style.display='none';
+                        break;
+                    case 1:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Consultation_Requests').style.display='block';
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('Reservation').style.display='none';
+                        break;
+                    case 2:
+                        document.getElementById('map-container-google-1').style.display='none'; document.getElementById('Reservation').style.display='block';
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        break;
+                }
+            }
+
+            function CloseFormSignUp(numberForm){
+                switch(numberForm) {
+                    case 0:
+                        document.getElementById('Requests_Pending').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                    case 1:
+                        document.getElementById('Consultation_Requests').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                    case 2:
+                        document.getElementById('Reservation').style.display='none';
+                        document.getElementById('map-container-google-1').style.display='block';
+                        break;
+                }
+            }
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

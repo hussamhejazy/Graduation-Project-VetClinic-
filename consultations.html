@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vetclinic</title>
+        <link rel="icon" href="image/iconApp/iconApp.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            body{
+                background-color: #E2FFDB;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Start header -->
+        <header>
+            <!--Start navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/iconApp/Logo.png" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Medical_blogs.html">Medical blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="consultations.html">Consulataions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="nav-link icons-profile">
+                                    <div class="icon-profile profile">
+                                        <button onclick="toggleProfile()">
+                                            <img src="file-20191203-66986-im7o5.jpg"/>
+                                        </button> 
+                                    </div>
+
+                                    <div id="listProfile" class="listProfile">
+                                        <ul>
+                                            <li class="item_p">
+                                                <a href="pagDr.html">
+                                                    <i class="bi bi-person"></i>
+                                                    <span>username</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="#">
+                                                    <i class="bi bi-sliders"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+                                            <li class="item_p">
+                                                <a href="#">
+                                                    <i class="bi bi-life-preserver"></i>
+                                                    <span>Help</span>
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="item_p">
+                                                <a href="index.html">
+                                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                                    <span>LogOut</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button onclick="toggleNotifi()" class="icon-profile notification">
+                                        <img src="image/iconsheader/notifications_none-24px.png"/>
+                                        <span class="badge">0</span>
+                                    </button>
+
+                                    <div id="listNotification" class="listNotification-content">
+                                        <h6>Notices</h6>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="item-notifi">
+                                                <a href="">Clinic ahgba</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar -->
+        </header>
+        <!-- End header -->
+
+
+        <section class="section_consultations">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-5 border-right">
+                        <div class="d-flex flex-column p-3 py-5">
+                            <h1 class="title">Incoming consultations</h1>
+                            <h2 class="mt-4 supTitle">Consultation status</h2>
+                            <div class="row mt-4 check-item">
+                                <div class="col-md-5">
+                                    <input type="checkbox" class="check-item-checkbox"  name="waiting">
+                                    <label class="check-item-label" for="waiting">Awaiting instructions</label>
+                                </div>
+                            </div>
+                            <div class="row mt-3 check-item">
+                                <div class="col-md-5">
+                                    <input type="checkbox" class="check-item-checkbox"  name="waiting">
+                                    <label class="check-item-label" for="waiting">It is being implemented</label>
+                                </div>
+                            </div>
+                            <div class="row mt-3 check-item">
+                                <div class="col-md-5">
+                                    <input type="checkbox" class="check-item-checkbox"  name="waiting">
+                                    <label class="check-item-label" for="waiting">Awaiting receipt</label>
+                                </div>
+                            </div>
+                            <div class="row mt-3 check-item">
+                                <div class="col-md-5">
+                                    <input type="checkbox" class="check-item-checkbox"  name="waiting">
+                                    <label class="check-item-label" for="waiting">it has been delivred</label>
+                                </div>
+                            </div>
+                            <div class="row mt-3 check-item">
+                                <div class="col-md-5">
+                                    <input type="checkbox" class="check-item-checkbox"  name="waiting">
+                                    <label class="check-item-label" for="waiting">Canceled</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 consultations">
+                        <div class="py-5">
+
+                            <div class="consultation row mt-4">
+                                <div class="image col-md-3">
+                                    <img src="file-20191203-66986-im7o5.jpg" alt="">
+                                </div>
+                                <div class="row col-md-9">
+                                    <div class="col-md-9">
+                                        <h1>#Consultation question</h1>
+                                        <ul>
+                                            <li>
+                                                <a href="pagDr.html">
+                                                    <i class="bi bi-person"></i>
+                                                    <span>username</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a >
+                                                    <i class="fa fa-usd"></i>
+                                                    <span>0.00</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>status</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>history</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>
+                                                <button class="view-consultation" type="button" onclick="OpenForm_Dialog()">View</button>
+                                            </li>
+                                            <li>
+                                                <button class="close-consultation" type="button">Close</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start Consult form -->
+        <div id="Consult_Dialog" class="my-modal">
+            <form class="my-modal-content animate Dialog " action="">
+                <span onclick="CloseForm_Dialog()" class="close" title="Close Modal">&times;</span>
+                <div class="container text-center">
+                    <h1 class="Title-Dialog">Consult</h1>
+                    <div class="row Disabled">
+                        <div class="row mt-2">
+                            <div class="col-md-6 col-sm-12 ">
+                                <label for="Question"><b>Ask a Question</b></label>
+                                <br>
+                                <input type="text" name="Question" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="classification"><b>Question classification</b></label>
+                                <br>
+                                <select name="classification" id="classification">
+                                    <option value="Select">Select:</option>
+                                    <option value="Internal">Internal diseases</option>
+                                    <option value="skin">skin diseases</option>
+                                    <option value="nutrition">nutrition</option>
+                                    <option value="Respiratory">Respiratory</option>
+                                    <option value="mating">Pregnancy and mating</option>
+                                    <option value="attention">Care and attention</option>
+                                    <option value="strikes">Fractions and strikes</option>
+                                    <option value="Eye">Eye problems</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="Type"><b>Animal type</b></label>
+                                <br>
+                                <input type="text" name="Type" >
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="gender"><b>Animal Gender</b></label>
+                                <br>
+                                <input type="text" name="gender" required>
+                            </div>
+
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="meals"><b>The type of meals</b></label>
+                                <br>
+                                <input type="text" name="meals" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="Nmeals"><b>The number of meals</b></label>
+                                <br>
+                                <input type="text" name="Nmeals" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="Symptoms"><b>Symptoms observed</b></label>
+                                <br>
+                                <input type="text" name="Symptoms" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="long_symptoms"><b>How long have these symptoms been observed ?</b></label>
+                                <br>
+                                <input type="text" name="long_symptoms" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12 col-sm-12">
+                                <label for="vaccinated"><b>Have you ever been vaccinated?</b></label>
+                                <input type="checkbox" name="vaccinated" required>
+                            </div>  
+                        </div>
+                        <div class="row mt-5 col-md-12 col-sm-12">
+                            <label for="notes"><b>Any other notes :</b></label>
+                            <textarea id="notes" name="notes" rows="5" ></textarea>
+                        </div>
+
+                    </div>
+                    <div class="Replay container">
+                        <div class="attachment row mt-3 col-lg-6 col-md-6 col-sm-12">
+                            <a href="test.rar" download>
+                                <i class="fa fa-save"></i>
+                                <span>Download File</span>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="row mt-5 col-md-12 col-sm-12">
+                            <label for="Replay"><b>Replay :</b></label>
+                            <textarea id="Replay" name="Replay" rows="10" ></textarea>
+                        </div>
+                        <div class="file row mt-3 col-lg-12 col-md-12">
+                            <div id="fileConsultation" class="InputFile col-md-9">
+                                <input type="file" name="fileConsult">
+                            </div>
+                        </div>
+                        <div class="row col-lg-3 col-md-4 col-sm-7 mt-3 price col-xsm-7">
+                            <label for="price"><b>Question classification</b></label>
+                            <select name="price" id="price">
+                                <option value="p10">10$</option>
+                                <option value="p15">15$</option>
+                                <option value="p20">20$</option>
+                                <option value="p25">25$</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="mt-5 text-right"><button class="" type="submit">submit</button></div>
+                </div>
+            </form>
+        </div>
+        <!-- end Consult form -->
+
+        <script>
+            var modal = document.getElementById('Consult_Dialog');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    event.target.style.display = "none";
+                }
+            }
+            function OpenForm_Dialog(){
+                document.getElementById('Consult_Dialog').style.display='block';
+            }
+
+            function CloseForm_Dialog(){
+                document.getElementById('Consult_Dialog').style.display='none';
+            }
+        </script>
+        <script>
+            var listNotification = document.getElementById('listNotification');
+            var listProfile = document.getElementById('listProfile');
+            var listNotification_isDown = false;
+            var listProfile_isDown = false;
+
+            function toggleNotifi(){
+                if (listNotification_isDown){
+                    listNotification.style.display = 'none';
+                    listNotification_isDown = false;
+                }else{
+                    if (listProfile_isDown){
+                        listProfile.style.display = 'none';
+                        listProfile_isDown = false;
+                    }
+                    listNotification.style.display = 'block';
+                    listNotification_isDown = true;
+                }
+            }
+
+            function toggleProfile(){
+                if (listProfile_isDown){
+                    listProfile.style.display = 'none';
+                    listProfile_isDown = false;
+                }else{
+                    if (listNotification_isDown){
+                        listNotification.style.display = 'none';
+                        listNotification_isDown = false;
+                    }
+                    listProfile.style.display = 'block';
+                    listProfile_isDown = true;
+                }
+            }
+
+
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </body>
+</html>
