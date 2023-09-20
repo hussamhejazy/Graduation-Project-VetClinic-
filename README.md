@@ -1,6 +1,6 @@
 # Graduation-Project-VetClinic-[VetClinic.docx](https://github.com/hussamhejazy/Graduation-Project-VetClinic-/files/11128208/VetClinic.docx)
 
-# to Live Demo > (LiveDemo)[ https://hussamhejazy.github.io/Graduation-Project-VetClinic-/]
+# [LiveDemo](https://hussamhejazy.github.io/Graduation-Project-VetClinic-/)
 Screenshot for website
 
 ![Screenshot (21)](https://user-images.githubusercontent.com/60976526/229260615-48016e3d-6d0c-4df9-a424-76c5d4da64d6.png)
